@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="TestFireFox(failed)">
+    <parameter name="browsrName" value="Firefox"/>
+    <classes>
+      <class name="newpro1.Testng">
+        <methods>
+          <include name="aftertest"/>
+          <include name="aftermethod"/>
+          <include name="testb"/>
+          <include name="launchBrowser"/>
+          <include name="beforeclass"/>
+          <include name="beforemethod"/>
+          <include name="afterclass"/>
+          <include name="testa"/>
+        </methods>
+      </class> <!-- newpro1.Testng -->
+    </classes>
+  </test> <!-- TestFireFox(failed) -->
+  <test thread-count="2" parallel="tests" name="Testchome(failed)">
+    <parameter name="browsrName" value="chrome"/>
+    <classes>
+      <class name="newpro1.Testng">
+        <methods>
+          <include name="aftertest"/>
+          <include name="aftermethod"/>
+          <include name="testb"/>
+          <include name="launchBrowser"/>
+          <include name="beforeclass"/>
+          <include name="beforemethod"/>
+          <include name="afterclass"/>
+          <include name="testa"/>
+        </methods>
+      </class> <!-- newpro1.Testng -->
+    </classes>
+  </test> <!-- Testchome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
